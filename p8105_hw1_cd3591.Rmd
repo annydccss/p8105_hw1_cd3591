@@ -20,3 +20,10 @@ data("early_january_weather")
 # quick look for the variables in the dataset
 early_january_weather
 ```
+
+**Short Description**
+The early_january_weather dataset has `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns.
+Its variables contain: `r paste(names(early_january_weather), collapse = ", ")`. 
+In specific, times range from `r min(early_january_weather$time_hour)` to `r max(early_january_weather$time_hour)`.
+The mean temperature over this time period is `r mean(early_january_weather$temp, na.rm = TRUE)`.
+
