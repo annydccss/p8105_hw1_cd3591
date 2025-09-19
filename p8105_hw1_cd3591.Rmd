@@ -79,8 +79,9 @@ The numeric variable (normal) and the logical variable (logit) work. This is bec
 
 However, the character (letters) and factor (levels) variables do not work: their means cannot be calculated because they are not numeric, and such means would be meaningless.
 
-```{r setup, results = hide}
+```{r setup, results = 'hide', warning = FALSE}
 # use as.numeric to the logical, character, and factor variables
+
 as.numeric(X$logit) # the values are changed into numbers with False = 0 and True = 1
 # R interprets False = 0 and True = 1
 # this explains why mean(logit) works: this shows the proportion of TRUEs
