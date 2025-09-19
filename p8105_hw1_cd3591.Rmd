@@ -49,9 +49,9 @@ set.seed(1122)
 # build the data frame
 x_numeric = rnorm(n = 10) # a random sample of size 10 from a standard normal distribution
 x_logical = x_numeric > 0 # whether the elements of the sample are greater than 0
-x_character = sample(letters, 10)
+x_character = sample(letters, 10) # a character vector of length 10
 x_factor = factor(sample(c("small", "medium", "large"), 10, replace = TRUE),
-                  levels = c("small","medium","large"))
+                  levels = c("small","medium","large")) # a factor vector of length 10, with 3 different levels
 
 X = data.frame(numeric = x_numeric,
                logical = x_logical,
@@ -60,4 +60,9 @@ X = data.frame(numeric = x_numeric,
 
 # quick look for the X data frame
 X
+```
+
+```{r}
+# pull the numeric variable and calculate the mean
+
 ```
