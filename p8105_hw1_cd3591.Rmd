@@ -40,3 +40,24 @@ temp_vs_time_plot
 # export the scatterplot
 ggsave("temp_vs_time.png", plot = temp_vs_time_plot)
 ```
+
+# Problem 2
+
+```{r}
+set.seed(1122)
+
+# build the data frame
+x_numeric = rnorm(n = 10) # a random sample of size 10 from a standard normal distribution
+x_logical = x_numeric > 0 # whether the elements of the sample are greater than 0
+x_character = sample(letters, 10)
+x_factor = factor(sample(c("small", "medium", "large"), 10, replace = TRUE),
+                  levels = c("small","medium","large"))
+
+X = data.frame(numeric = x_numeric,
+               logical = x_logical,
+               character = x_character,
+               factor = x_factor)
+
+# quick look for the X data frame
+X
+```
