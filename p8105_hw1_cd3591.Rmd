@@ -53,16 +53,12 @@ x_character = sample(letters, 10) # a character vector of length 10
 x_factor = factor(sample(c("small", "medium", "large"), 10, replace = TRUE),
                   levels = c("small","medium","large")) # a factor vector of length 10, with 3 different levels
 
-X = data.frame(numeric = x_numeric,
-               logical = x_logical,
-               character = x_character,
-               factor = x_factor)
+X = data.frame(normal = x_numeric,
+               logit = x_logical,
+               letters = x_character,
+               levels = x_factor)
 
 # quick look for the X data frame
 X
 ```
 
-```{r}
-# pull the numeric variable and calculate the mean
-
-```
