@@ -2,7 +2,7 @@
 title: "p8105_hw1_cd3591"
 author: "Anny"
 date: "2025-09-19"
-output: html_document
+output: github_document
 ---
 
 # Problem 1
@@ -34,4 +34,9 @@ temp_vs_time_plot = ggplot(early_january_weather,
   geom_point() +
   labs(x = "Time (hour)", y = "Temperature", color = "Humidity") 
 temp_vs_time_plot
+```
+
+```{r}
+# export the scatterplot
+ggsave("temp_vs_time.png", plot = temp_vs_time_plot)
 ```
