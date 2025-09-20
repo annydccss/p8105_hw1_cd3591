@@ -85,9 +85,12 @@ mean(X %>% pull(letters))
 # pull the factor variable and calculate the mean
 mean(X %>% pull(levels))
 ```
-The numeric variable (normal) and the logical variable (logit) work. This is because normal is already numeric, which is able to calculate the mean, and the R interprets False = 0 and True = 1 in the logical variable; therefore, the mean can also be calculated.
+The numeric variable (normal) and the logical variable (logit) work. 
+This is because normal is already numeric, which is able to calculate the mean, 
+and the R interprets False = 0 and True = 1 in the logical variable; therefore, the mean can also be calculated.
 
-However, the character (letters) and factor (levels) variables do not work: their means cannot be calculated because they are not numeric, and such means would be meaningless.
+However, the character (letters) and factor (levels) variables do not work: 
+their means cannot be calculated because they are not numeric, and such means would be meaningless.
 
 ```{r setup, results = 'hide', warning = FALSE}
 # use as.numeric to the logical, character, and factor variables
