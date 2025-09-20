@@ -40,7 +40,10 @@ temp_vs_time_plot = ggplot(early_january_weather,
   labs(x = "Time (hour)", y = "Temperature", color = "Humidity") 
 temp_vs_time_plot
 ```
-Description: The scatterplot indicates that the temperatures show a daily predictable cycle, which is cooler in early hours, and higher later, and then cooler again in the evening. There is a rising trend of temperatures with daily fluctuation over these two weeks, moving from the low 30s°F up to 50s°F before a very short cool down. Humidity, as seen in the blue color, describes that the darker the blue, the lower the humidity; the lighter the blue, the higher the humidity. Generally, the humidity is low over these two weeks, except for the time around Jan 7th and Jan 14th. Notably, humidity is extremely high around January 14.
+Description: The scatterplot indicates that the temperatures show a daily predictable cycle, which is cooler in early hours, and higher later, and then cooler again in the evening. 
+There is a rising trend of temperatures with daily fluctuation over these two weeks, moving from the low 30s°F up to 50s°F before a very short cool down. 
+Humidity, as seen in the blue color, describes that the darker the blue, the lower the humidity; the lighter the blue, the higher the humidity. 
+Generally, the humidity is low over these two weeks, except for the time around Jan 7th and Jan 14th. Notably, humidity is extremely high around January 14.
 
 
 ```{r}
