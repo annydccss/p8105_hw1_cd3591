@@ -25,7 +25,7 @@ early_january_weather
 The early_january_weather dataset has `r nrow(early_january_weather)` rows and `r ncol(early_january_weather)` columns.
 Its variables contain: `r paste(names(early_january_weather), collapse = ", ")`. 
 In specific, times range from `r min(early_january_weather$time_hour)` to `r max(early_january_weather$time_hour)`.
-The mean temperature over this time period is `r mean(early_january_weather$temp, na.rm = TRUE)`.
+The mean temperature over this time period is `r mean(early_january_weather$temp, na.rm = TRUE)` °F.
 
 ```{r}
 # change the Chinese of X-axis into English
@@ -40,6 +40,8 @@ temp_vs_time_plot = ggplot(early_january_weather,
   labs(x = "Time (hour)", y = "Temperature", color = "Humidity") 
 temp_vs_time_plot
 ```
+Description: The scatterplot indicates that the temperatures show a daily predictable cycle, which is cooler in early hours, and higher later, and then cooler again in the evening. There is a rising trend of temperatures with daily fluctuation over these two weeks, moving from the low 30s°F up to 50s°F before a very short cool down. Humidity, as seen in the blue color, describes that the darker the blue, the lower the humidity; the lighter the blue, the higher the humidity. Generally, the humidity is low over these two weeks, except for the time around Jan 7th and Jan 14th. Notably, humidity is extremely high around January 14.
+
 
 ```{r}
 # export the scatterplot
